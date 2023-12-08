@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Ambiente Comum</title>
+    <link rel="stylesheet" href="../assets/ambienteComum.css">
+    <link rel="stylesheet" href="../assets/default.css">
+</head>
+<header>
+    <nav>
+      <a id="home" href="ml" onclick="goTo('home')">Home</a>
+      <a id="reserva" href=".html" onclick="goTo('reserva')">Reserva</a>
+      <a id="encomenda" href="da.html" onclick="goTo('encomenda')">Encomendas</a>
+      <a id="ambienteComum" href="/ambienteComum.html" onclick="goTo('ambienteComum')">Ambiente Comum</a>
+      <a id="contratos" href="#" onclick="">Contratos</a>
+      <a id="usuario" href=".html" onclick="">Criar Usuário</a>
+    </nav>
+  </header>
+<body>
+    <h2>Cadastro de ambiente comum</h2>
+    <form id="myForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="description">Descrição:</label>
+        <textarea rows="4" cols="50" placeholder="Digite seu texto aqui..."></textarea>
+        <button type="button" onclick="validateForm()">Enviar</button>
+    </form>
+</body>
+</html>

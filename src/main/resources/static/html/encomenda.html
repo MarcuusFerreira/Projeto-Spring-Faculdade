@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreamento de Encomenda</title>
+    <link rel="stylesheet" href="../assets/encomenda.css">
+    <link rel="stylesheet" href="../assets/default.css">
+</head>
+<header>
+    <nav>
+      <a id="home" href="ml" onclick="goTo('home')">Home</a>
+      <a id="reserva" href=".html" onclick="goTo('reserva')">Reserva</a>
+      <a id="encomenda" href="/encomenda.html" onclick="goTo('encomenda')">Encomendas</a>
+      <a id="ambienteComum" href="eComum.html" onclick="goTo('ambienteComum')">Ambiente Comum</a>
+      <a id="contratos" href="#" onclick="">Contratos</a>
+      <a id="usuario" href=".html" onclick="">Criar Usuário</a>
+    </nav>
+  </header>
+<body>
+<div class="container">
+    <h2>Rastreamento de Encomenda</h2>
+    <form id="trackingForm">
+        <label for="codigoEncomenda">Código da Encomenda:</label>
+        <input type="text" id="codigoEncomenda" name="codigoEncomenda" required>
+
+        <label for="bloco">Bloco:</label>
+        <input type="text" id="bloco" name="bloco" required>
+
+        <label for="apartamento">Apartamento:</label>
+        <input type="text" id="apartamento" name="apartamento" required>
+
+        <label for="horarioRecebimento">Horário de Recebimento:</label>
+        <input type="text" id="horarioRecebimento" name="horarioRecebimento" required>
+
+        <button type="button" onclick="submitForm()">Rastrear Encomenda</button>
+    </form>
+</div>
+<script src="../src/js/encomenda.js"></script>
+</body>
+</html>
